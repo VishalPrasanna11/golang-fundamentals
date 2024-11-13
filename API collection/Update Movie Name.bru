@@ -1,0 +1,17 @@
+meta {
+  name: Update Movie Name
+  type: http
+  seq: 12
+}
+
+put {
+  url: http://localhost:8080/movies/6733f15cbd58615db465d79a
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "movieName":"Kirik Part"
+  }
+}
