@@ -1,0 +1,19 @@
+meta {
+  name: Create Movie
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8080/movies
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "movieName": "Inception",
+    "watched": false
+  }
+  
+}
